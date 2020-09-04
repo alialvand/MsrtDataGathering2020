@@ -5,7 +5,7 @@ using System.Text;
 
 namespace MsrtDg.Core.Services
 {
-    public interface ICourseService
+    public interface IPersonService
     {
         PersonViewModel GetPersons();
     }

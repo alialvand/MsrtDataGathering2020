@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\MsrtDg.Infra.Data\MsrtDg.Infra.Data.csproj" />
+    <ProjectReference Include="..\MsrtDg.IoC\MsrtDg.IoC.csproj" />
   </ItemGroup>
 
 

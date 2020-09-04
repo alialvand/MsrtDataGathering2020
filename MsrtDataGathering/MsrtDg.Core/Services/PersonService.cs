@@ -6,11 +6,11 @@ using System.Text;
 
 namespace MsrtDg.Core.Services
 {
-    public class CourseService : ICourseService
+    public class PersonService : IPersonService
     {
         IPersonRepository _personRepository;
 
-        public CourseService (IPersonRepository personRepository)
+        public PersonService (IPersonRepository personRepository)
         {
             _personRepository = personRepository;
         }

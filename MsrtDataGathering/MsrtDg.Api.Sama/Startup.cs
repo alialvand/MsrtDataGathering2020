@@ -12,6 +12,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using MsrtDg.Infra.Data.Context;
+using MsrtDg.IoC;
 
 namespace MsrtDg.Api.Sama
 {
@@ -36,6 +37,8 @@ namespace MsrtDg.Api.Sama
             }
 
             );
+
+            RegisterServices(services);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -56,6 +59,10 @@ namespace MsrtDg.Api.Sama
             {
                 endpoints.MapControllers();
             });
+        }
+        public static void RegisterServices(IServiceCollection service)
+        {
+            DependencyContainer.RegisterServices(service);
         }
     }
 }

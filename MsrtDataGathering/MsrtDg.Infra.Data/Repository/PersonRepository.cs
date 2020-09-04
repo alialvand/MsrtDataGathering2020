@@ -7,7 +7,7 @@ using System.Text;
 
 namespace MsrtDg.Infra.Data.Repository
 {
-    class PersonRepository : IPersonRepository
+    public class PersonRepository : IPersonRepository
     {
         private MsrtDBContext _ctx;
 
