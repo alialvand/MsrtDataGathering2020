@@ -10,7 +10,7 @@ namespace MsrtDg.Infra.Data.Context
     public class MsrtDBContext:DbContext
     {
 
-        public MsrtDBContext(DbContextOptions<MsrtDBContext> options)
+        public MsrtDBContext(DbContextOptions<MsrtDBContext> options):base(options)
         {
 
         }
